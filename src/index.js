@@ -1,21 +1,26 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css";
-import React from "react";
-import ReactDOM from "react-dom";
-import Navigation from "./Navigation";
-import About from "./About";
-import Experience from "./Experience";
-import Education from "./Education";
-import Skills from "./Skills";
-
-import "./styles.css";
+import "bootstrap/dist/css/bootstrap.min.css"
+import "shards-ui/dist/css/shards.min.css"
+import React, { useEffect, useState } from "react"
+import ReactDOM from "react-dom"
+import Navigation from "./Navigation"
+import About from "./About"
+import Experience from "./Experience"
+import Education from "./Education"
+import Skills from "./Skills"
+import Projects from "./Projects"
+import Awards from "./Awards"
+import NavVertical from "./NavVertical"
+import useWindowSize from "./useWindowSize"
+import "./styles.css"
 
 function App() {
+  const size = useWindowSize()
+
   return (
-    <div className="">
-      <Navigation />
+    <div className="App">
+      {size.width < 700 ? <Navigation /> : <NavVertical />}
       <div class="container-fluid">
-        <About />
+        <About width={size.width} />
         <hr />
         <Experience />
         <hr />
@@ -23,10 +28,13 @@ function App() {
         <hr />
         <Skills />
         <hr />
+        <Projects />
+        <hr />
+        <Awards />
       </div>
     </div>
-  );
+  )
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+const rootElement = document.getElementById("root")
+ReactDOM.render(<App />, rootElement)

@@ -1,21 +1,21 @@
-import React from "react";
+import React from "react"
+import Section from "./Section"
 
 export default function Education() {
   return (
-    <div id="Education" class="h-100 d-flex flex-column pt-5">
-      <h1 className="mt-5">Education</h1>
-      <div className="d-flex flex-fill flex-column justify-content-center">
-        <div class="mb-5">
-          <h5>VG Technical University</h5>
-          <h6 class="text-muted">2013 - 2015 • Vilnius, Lithuania</h6>
-          <p>MSc in Thermal Engineering</p>
-        </div>
-        <div class="item">
-          <h5>Lund University</h5>
-          <h6 class="text-muted">2013 - 2015 • Lund, Sweden</h6>
-          <p>MSc in Energy-efficient and Environmental Building Design</p>
-        </div>
+    <Section id="Education">
+      <div class="mb-5">
+        <h2>Lund University</h2>
+        <h4 class="text-muted">2013 - 2015 • Lund, Sweden</h4>
+        <p class="mt-2">
+          MSc in Energy-efficient and Environmental Building Design
+        </p>
       </div>
-    </div>
-  );
+      <div class="mb-5">
+        <h2>VG Technical University</h2>
+        <h4 class="text-muted">2009 - 2013 • Vilnius, Lithuania</h4>
+        <p class="mt-2">BSc in Thermal Engineering</p>
+      </div>
+    </Section>
+  )
 }

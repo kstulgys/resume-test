@@ -1,6 +1,4 @@
-import React from "react";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useState, useEffect } from "react"
 import {
   Navbar,
   NavbarToggler,
@@ -9,66 +7,89 @@ import {
   NavItem,
   NavLink,
   Collapse
-} from "shards-react";
+} from "shards-react"
 
-export default class NavExample extends React.Component {
-  constructor(props) {
-    super(props);
+export default function Navigation() {
+  const [open, toggle] = useState(false)
+  const [active, setActive] = useState("#About")
 
-    this.toggleNavbar = this.toggleNavbar.bind(this);
+  // useEffect(() => {
+  //   document.querySelector('[ href="#Projects"]').click()
+  // }, [])
 
-    this.state = {
-      dropdownOpen: false,
-      collapseOpen: false
-    };
-  }
+  return (
+    <Navbar class="sticky-top" type="dark" theme="secondary" expand="md">
+      <NavbarBrand href="#">
+        <h2 class="p-0 m-0 text-warning">#imkarolis</h2>
+      </NavbarBrand>
+      <NavbarToggler onClick={() => toggle(!open)} />
 
-  toggleNavbar() {
-    this.setState({
-      ...this.state,
-      ...{
-        collapseOpen: !this.state.collapseOpen
-      }
-    });
-  }
+      <Collapse open={open} navbar>
+        <Nav navbar>
+          <NavItem>
+            <NavLink
+              name="#About"
+              active={active === "#About"}
+              href="#About"
+              onClick={e => setActive(e.target.name)}
+            >
+              About
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              name="#Experience"
+              active={active === "#Experience"}
+              href="#Experience"
+              onClick={e => setActive(e.target.name)}
+            >
+              Experience
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              name="#Education"
+              active={active === "#Education"}
+              href="#Education"
+              onClick={e => setActive(e.target.name)}
+            >
+              Education
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              name="#Skills"
+              active={active === "#Skills"}
+              href="#Skills"
+              onClick={e => setActive(e.target.name)}
+            >
+              Skills
+            </NavLink>
+          </NavItem>
 
-  render() {
-    return (
-      <Navbar class="sticky-top" type="dark" theme="secondary" expand="md">
-        <NavbarBrand href="#" className="text-warning">
-          imkarolis
-        </NavbarBrand>
-        <NavbarToggler onClick={this.toggleNavbar} />
+          <NavItem>
+            <NavLink
+              name="#Projects"
+              active={active === "#Projects"}
+              href="#Projects"
+              onClick={e => setActive(e.target.name)}
+            >
+              Projects
+            </NavLink>
+          </NavItem>
 
-        <Collapse open={this.state.collapseOpen} navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink active href="#About">
-                About
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#Experience">Experience</NavLink>
-            </NavItem>
-
-            <NavItem>
-              <NavLink href="#Education">Education</NavLink>
-            </NavItem>
-
-            <NavItem>
-              <NavLink href="#Skills">Skills</NavLink>
-            </NavItem>
-
-            <NavItem>
-              <NavLink href="#Projects">Projects</NavLink>
-            </NavItem>
-
-            <NavItem>
-              <NavLink href="#Awards">Awards</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    );
-  }
+          <NavItem>
+            <NavLink
+              name="#Awards"
+              active={active === "#Awards"}
+              href="#Awards"
+              onClick={e => setActive(e.target.name)}
+            >
+              Awards
+            </NavLink>
+          </NavItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
+  )
 }

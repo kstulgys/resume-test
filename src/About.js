@@ -1,28 +1,40 @@
-import React from "react";
+import React from "react"
 
-export default function About() {
+export default function About({ width }) {
   return (
     <div
       id="About"
-      class="vh-100 d-flex flex-column justify-content-center pt-5"
+      class={`vh-100 d-flex flex-column justify-content-center w-${
+        width > 700 ? "50" : "100"
+      } ml-lg-5 `}
     >
-      <div class="d-flex flex-column justify-content-center mt-5">
-        <h1 class="display-4">
-          Pasionate <span class="text-warning">Self-taught</span> Frontend
-          engineer
+      <div class="d-flex flex-column justify-content-center mt-lg-0 mt-5">
+        <h1 class="display-2">
+          Pasionate{" "}
+          <span class="text-warning font-weight-bold">Self-taught</span>{" "}
+          Frontend engineer
         </h1>
-        <p>
-          An ordinary man, who learned, he is capable of extraordinary things
+        <p class="mb-4 mb-lg-5">
+          An ordinary man, who learned, he is capable of{" "}
+          <span class="text-warning font-weight-bold">extraordinary</span>{" "}
+          things
         </p>
-      </div>
-      <div className="social-icons d-flex justify-content-center mt-5">
-        <a class="" href="#">
-          <i class="fab fa-github" />
-        </a>
-        <a class="" href="#">
-          <i class="fab fa-linkedin" />
-        </a>
+        <div className="social-icons d-flex justify-content-center justify-content-lg-end mt-5">
+          <a class="" href="https://github.com/kstulgys" target="_blank">
+            <i class="fab fa-github" />
+          </a>
+          <a
+            class=""
+            href="https://linkedin.com/in/karolis-stulgys"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin" />
+          </a>
+          <a class="" href="https://bit.ly/2ShKcvV" target="_blank">
+            <i class="fas fa-file-download" />
+          </a>
+        </div>
       </div>
     </div>
-  );
+  )
 }

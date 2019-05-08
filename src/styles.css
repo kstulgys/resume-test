@@ -5,23 +5,63 @@
 
 body {
   background-color: #e9ecef;
+  font-size: 18px !important;
+}
+
+.App {
+  display: grid;
+  grid-template: "navVertical" "container";
+  grid-template-columns: 1fr 5fr;
+}
+
+.nav-vertical {
+  grid-area: "navVertical";
+}
+
+.container-fluid {
+  grid-area: "container";
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none !important;
+}
+
+a.text-secondary:hover {
+  color: #ffb400 !important;
+  transition: all 1s ease-out;
 }
 
 .App {
   overflow: hidden;
 }
 
-.container-fluid {
-  /* height: 100vh !important;
-  width: 100% !important;
-  overflow-y: scroll !important;
-  scroll-behavior: smooth !important; */
+.navbar {
+  z-index: 10;
+}
 
-  width: 100%;
-  height: 100vh;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  overflow-x: hidden;
+.img-profile {
+  max-width: 10rem;
+  max-height: 10rem;
+  border: 0.5rem solid #5a6169;
 }
 
 .social-icons a {
@@ -47,4 +87,145 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+h1 {
+  font-size: 1.602em;
+}
+h2 {
+  font-size: 1.424em;
+}
+h3 {
+  font-size: 1.266em;
+}
+h4 {
+  font-size: 1.125em;
+}
+h5 {
+  font-size: 0.889em;
+}
+h6 {
+  font-size: 0.79em;
+}
+.display-1 {
+  font-size: 3.906em;
+}
+.display-2 {
+  font-size: 3.125em;
+}
+.display-3 {
+  font-size: 2.5em;
+}
+.display-4 {
+  font-size: 2em;
+  text-transform: uppercase !important;
+}
+
+/* // Medium devices (tablets, 48em and up)
+
+/* //------------------------------------------------------------// */
+@media (min-width: 48em) {
+  h1 {
+    font-size: 2.441em;
+  }
+  h2 {
+    font-size: 1.953em;
+  }
+  h3 {
+    font-size: 1.563em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  .display-1 {
+    font-size: 6em;
+  }
+  .display-2 {
+    font-size: 5.5em;
+  }
+  .display-3 {
+    font-size: 4.5em;
+    text-transform: capitalize;
+  }
+  .display-4 {
+    font-size: 3.5em;
+  }
+}
+
+/* // Large devices (desktops, 62em and up) */
+@media (min-width: 62em) {
+  html,
+  body {
+    font-size: 16px !important;
+  }
+}
+
+/* // Extra large devices (large desktops, 75em and up) */
+@media (min-width: 75em) {
+  html,
+  body {
+    font-size: 18px !important;
+  }
+}
+
+/* // Pen Specific Styles */
+/* .jumbotron {
+	font-size: 16px;
+	@media (min-width: 62em) {
+		font-size: 20px;
+	}
+	h1 {
+		border-bottom: 4px solid #0275d8;
+	}
+	p.lead {
+		border-radius: 4px;
+	}
+} */
+
+.grid {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.img-container:hover img {
+  opacity: 0.2;
+}
+
+.img-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.img-container:hover .img-description {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+
+.img-icons i {
+  transition: all 0.3s ease-out;
+}
+
+.img-icons a:hover i {
+  color: #ffb400 !important;
 }
