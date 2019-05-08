@@ -26,6 +26,14 @@ export default function Skills() {
           <li>Prisma</li>
         </ul>
       </div>
+
+      <div class="item mb-5">
+        <h2>Other</h2>
+        <ul class="ml-4 mt-2">
+          <li>Jest</li>
+          <li>react-testing-library</li>
+        </ul>
+      </div>
     </Section>
   )
 }
