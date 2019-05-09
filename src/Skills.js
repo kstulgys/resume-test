@@ -14,6 +14,10 @@ export default function Skills() {
           </li>
           <li>
             <i class="fas fa-check mr-2 text-warning" />
+            Bootstrap
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
             JavaScript
           </li>
           <li>
@@ -33,6 +37,10 @@ export default function Skills() {
           <li>
             <i class="fas fa-check mr-2 text-warning" />
             REST
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            Firebase / Firestore
           </li>
           <li>
             <i class="fas fa-check mr-2 text-warning" />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
 import {
   Navbar,
   NavbarToggler,
@@ -7,11 +7,11 @@ import {
   NavItem,
   NavLink,
   Collapse
-} from "shards-react"
+} from "shards-react";
 
 export default function Navigation() {
-  const [open, toggle] = useState(false)
-  const [active, setActive] = useState("#About")
+  const [open, toggle] = useState(false);
+  const [active, setActive] = useState("#About");
 
   // useEffect(() => {
   //   document.querySelector('[ href="#Projects"]').click()
@@ -19,7 +19,7 @@ export default function Navigation() {
 
   return (
     <Navbar class="sticky-top" type="dark" theme="secondary" expand="md">
-      <NavbarBrand href="#">
+      <NavbarBrand href="#About">
         <h2 class="p-0 m-0 text-warning">#imkarolis</h2>
       </NavbarBrand>
       <NavbarToggler onClick={() => toggle(!open)} />
@@ -91,5 +91,5 @@ export default function Navigation() {
         </Nav>
       </Collapse>
     </Navbar>
-  )
+  );
 }
