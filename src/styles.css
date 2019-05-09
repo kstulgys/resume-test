@@ -46,6 +46,12 @@ ul li {
   /* overflow-x: hidden; */
 }
 
+.navbar button {
+  transform: scale(1.5);
+  border: none !important;
+  outline: none !important;
+}
+
 h1,
 h2,
 h3,
