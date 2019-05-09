@@ -4,9 +4,9 @@ import me from "./images/me.jpg"
 export default function NavVertical() {
   const [active, setActive] = useState("#About")
 
-  useEffect(() => {
-    document.querySelector('[ href="#Projects"]').click()
-  }, [])
+  // useEffect(() => {
+  //   document.querySelector('[ href="#Projects"]').click()
+  // }, [])
 
   function handleClick(e) {
     const { name } = e.target
