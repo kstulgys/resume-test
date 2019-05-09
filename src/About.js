@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
 export default function About({ width }) {
   return (
     <div
       id="About"
       class={`vh-100 d-flex flex-column justify-content-center w-${
-        width > 700 ? "50" : "100"
+        width > 991 ? "50" : "100"
       } ml-lg-5 `}
     >
       <div class="d-flex flex-column justify-content-center mt-lg-0 mt-5">
@@ -36,5 +36,5 @@ export default function About({ width }) {
         </div>
       </div>
     </div>
-  );
+  )
 }

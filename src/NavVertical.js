@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
-import me from "./images/me.jpg";
+import React, { useState, useEffect } from "react"
+import me from "./images/me.jpg"
 
 export default function NavVertical() {
-  const [active, setActive] = useState("#About");
+  const [active, setActive] = useState("#About")
 
-  // useEffect(() => {
-  //   document.querySelector('[ href="#Skills"]').click();
-  // }, []);
+  useEffect(() => {
+    document.querySelector('[ href="#Projects"]').click()
+  }, [])
 
   function handleClick(e) {
-    const { name } = e.target;
-    console.log(name);
-    setActive(name);
+    const { name } = e.target
+    console.log(name)
+    setActive(name)
   }
 
   return (
@@ -84,5 +84,5 @@ export default function NavVertical() {
         </h2>
       </div>
     </div>
-  );
+  )
 }
