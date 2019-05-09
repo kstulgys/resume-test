@@ -17,7 +17,11 @@ export default function NavVertical() {
   return (
     <div className="nav-vertical bg-dark d-flex justify-content-center align-items-center">
       <div class="d-flex flex-column align-items-center justify-content-around">
-        <img src={me} className="rounded-circle mb-5 img-profile" />
+        <img
+          src={me}
+          className="rounded-circle mb-5 img-profile wow fadeIn"
+          data-wow-duration="2s"
+        />
         <h2 class="m-2 font-weight-bold">
           <a
             name="#About"

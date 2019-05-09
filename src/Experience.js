@@ -1,5 +1,5 @@
-import React from "react"
-import Section from "./Section"
+import React from "react";
+import Section from "./Section";
 
 export default function Experience() {
   return (
@@ -30,5 +30,5 @@ export default function Experience() {
         </p>
       </div>
     </Section>
-  )
+  );
 }

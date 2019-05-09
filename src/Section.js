@@ -1,8 +1,8 @@
-import React from "react"
-import useWindowSize from "./useWindowSize"
+import React from "react";
+import useWindowSize from "./useWindowSize";
 
 export default function Section({ id, children }) {
-  const size = useWindowSize()
+  const size = useWindowSize();
   return (
     <>
       <section
@@ -17,5 +17,5 @@ export default function Section({ id, children }) {
         </div>
       </section>
     </>
-  )
+  );
 }
