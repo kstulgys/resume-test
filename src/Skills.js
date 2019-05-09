@@ -1,5 +1,5 @@
-import React from "react"
-import Section from "./Section"
+import React from "react";
+import Section from "./Section";
 
 export default function Skills() {
   return (
@@ -7,33 +7,69 @@ export default function Skills() {
       <div class="item mb-5">
         <h2>Frontend</h2>
         <h4 class="text-muted">Proficient with:</h4>
-        <ul class="ml-4 mt-2">
-          <li>HTML & CSS</li>
-          <li>JavaScript</li>
-          <li>Reactjs</li>
-          <li>Apollo Client</li>
+        <ul class="mt-2">
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            HTML & CSS
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            JavaScript
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            Reactjs
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            Apollo Client
+          </li>
         </ul>
       </div>
       <div class="item mb-5">
         <h2>Backend</h2>
         <h4 class="text-muted">Familiar with:</h4>
-        <ul class="ml-4 mt-2">
-          <li>REST</li>
-          <li>Node</li>
-          <li>Apollo Server</li>
-          <li>Graphql</li>
-          <li>MongoDB</li>
-          <li>Prisma</li>
+        <ul class="mt-2">
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            REST
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            Node
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            Apollo Server
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            Graphql
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            MongoDB
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            Prisma
+          </li>
         </ul>
       </div>
 
       <div class="item mb-5">
-        <h2>Other</h2>
-        <ul class="ml-4 mt-2">
-          <li>Jest</li>
-          <li>react-testing-library</li>
+        <h2>Testing</h2>
+        <ul class="mt-2">
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            Jest
+          </li>
+          <li>
+            <i class="fas fa-check mr-2 text-warning" />
+            react-testing-library
+          </li>
         </ul>
       </div>
     </Section>
-  )
+  );
 }

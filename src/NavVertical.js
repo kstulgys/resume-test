@@ -1,104 +1,84 @@
-import React, { useState } from "react"
-import me from "./images/me.jpg"
+import React, { useState, useEffect } from "react";
+import me from "./images/me.jpg";
 
 export default function NavVertical() {
-  const [active, setActive] = useState("#About")
+  const [active, setActive] = useState("#About");
+
+  // useEffect(() => {
+  //   document.querySelector('[ href="#Skills"]').click();
+  // }, []);
 
   function handleClick(e) {
-    const { name } = e.target
-    console.log(name)
-    setActive(name)
+    const { name } = e.target;
+    console.log(name);
+    setActive(name);
   }
 
   return (
     <div className="nav-vertical bg-dark d-flex justify-content-center align-items-center">
       <div class="d-flex flex-column align-items-center justify-content-around">
         <img src={me} className="rounded-circle mb-5 img-profile" />
-        <h2 class="m-2">
+        <h2 class="m-2 font-weight-bold">
           <a
             name="#About"
             href="#About"
             onClick={handleClick}
-            class={
-              active === "#About"
-                ? "text-warning font-weight-bold"
-                : "text-secondary "
-            }
+            class={active === "#About" ? "text-warning" : "text-secondary "}
           >
             About
           </a>
         </h2>
-        <h2 class="text-warning m-2">
+        <h2 class="m-2 font-weight-bold">
           <a
             name="#Experience"
             href="#Experience"
             onClick={handleClick}
-            class={
-              active === "#Experience"
-                ? "text-warning font-weight-bold"
-                : "text-secondary"
-            }
+            class={active === "#Experience" ? "text-warning" : "text-secondary"}
           >
             Experience
           </a>
         </h2>
-        <h2 class="text-warning m-2">
+        <h2 class="m-2 font-weight-bold">
           <a
             name="#Education"
             href="#Education"
             onClick={handleClick}
-            class={
-              active === "#Education"
-                ? "text-warning font-weight-bold"
-                : "text-secondary"
-            }
+            class={active === "#Education" ? "text-warning" : "text-secondary"}
           >
             Education
           </a>
         </h2>
-        <h2 class="text-warning m-2">
+        <h2 class="m-2 font-weight-bold">
           <a
             name="#Skills"
             href="#Skills"
             onClick={handleClick}
-            class={
-              active === "#Skills"
-                ? "text-warning font-weight-bold"
-                : "text-secondary"
-            }
+            class={active === "#Skills" ? "text-warning" : "text-secondary"}
           >
             Skills
           </a>
         </h2>
-        <h2 class="text-warning m-2">
+        <h2 class="m-2 font-weight-bold">
           <a
             name="#Projects"
             href="#Projects"
             onClick={handleClick}
-            class={
-              active === "#Projects"
-                ? "text-warning font-weight-bold"
-                : "text-secondary"
-            }
+            class={active === "#Projects" ? "text-warning" : "text-secondary"}
           >
             Projects
           </a>
         </h2>
-        <h2 class="text-warning m-2">
+        <h2 class="m-2 font-weight-bold">
           <a
             name="#Awards"
             href="#Awards"
             onClick={handleClick}
-            class={
-              active === "#Awards"
-                ? "text-warning font-weight-bold"
-                : "text-secondary"
-            }
+            class={active === "#Awards" ? "text-warning" : "text-secondary"}
           >
             Awards
           </a>
         </h2>
       </div>
     </div>
-  )
+  );
 }
