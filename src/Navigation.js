@@ -20,7 +20,7 @@ export default function Navigation() {
   return (
     <Navbar class="sticky-top" type="dark" theme="secondary" expand="md">
       <NavbarBrand href="#About">
-        <h2 class="p-0 m-0 text-warning">#imkarolis</h2>
+        <h2 class="p-0 m-0 text-warning font-weight-bold">#imkarolis</h2>
       </NavbarBrand>
       <NavbarToggler onClick={() => toggle(!open)} />
 
