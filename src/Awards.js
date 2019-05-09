@@ -5,7 +5,7 @@ import c1 from "./images/c1.png"
 export default function Awards() {
   return (
     <Section id="Awards">
-      <div className="grid">
+      <div className="">
         <div class="img-container">
           <img src={c1} />
         </div>
