@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react"
-import me from "./images/me.jpg"
+import React, { useState, useEffect } from "react";
+import me from "./images/me.jpg";
 
 export default function NavVertical() {
-  const [active, setActive] = useState("#About")
+  const [active, setActive] = useState("#About");
 
   // useEffect(() => {
   //   document.querySelector('[ href="#Projects"]').click()
   // }, [])
 
   function handleClick(e) {
-    const { name } = e.target
-    console.log(name)
-    setActive(name)
+    const { name } = e.target;
+    console.log(name);
+    setActive(name);
   }
 
   return (
-    <div className="nav-vertical bg-dark d-flex justify-content-center align-items-center">
+    <nav className="nav-vertical bg-dark d-flex justify-content-center align-items-center">
       <div class="d-flex flex-column align-items-center justify-content-around">
         <img
           src={me}
@@ -82,7 +82,17 @@ export default function NavVertical() {
             Awards
           </a>
         </h2>
+        <h2 class="m-2 font-weight-bold">
+          <a
+            name="#Interests"
+            href="#Interests"
+            onClick={handleClick}
+            class={active === "#Interests" ? "text-warning" : "text-secondary"}
+          >
+            Interests
+          </a>
+        </h2>
       </div>
-    </div>
-  )
+    </nav>
+  );
 }

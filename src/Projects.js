@@ -1,19 +1,19 @@
-import React from "react"
-import Section from "./Section"
-import fire from "./images/fire.png"
-import hotel from "./images/hotel.png"
-import cart from "./images/cart.png"
+import React from "react";
+import Section from "./Section";
+import fire from "./images/fire.png";
+import hotel from "./images/hotel.png";
+import cart from "./images/cart.png";
 
 export default function Portfolio() {
   return (
     <Section id="Projects">
       <div className="grid">
         {items().map((item, i) => {
-          return <IMGContainer {...item} />
+          return <IMGContainer key={i} {...item} />;
         })}
       </div>
     </Section>
-  )
+  );
 }
 
 function IMGContainer({ itemNum, img, title, description, git, live }) {
@@ -35,7 +35,7 @@ function IMGContainer({ itemNum, img, title, description, git, live }) {
         </div>
       </div>
     </article>
-  )
+  );
 }
 
 function items() {
@@ -106,5 +106,5 @@ function items() {
       git: null,
       live: null
     }
-  ]
+  ];
 }
