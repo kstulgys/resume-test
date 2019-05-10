@@ -105,6 +105,7 @@ a.text-secondary:hover {
 
 .social-icons a:hover {
   background-color: #ffb400;
+  cursor: pointer;
 }
 
 .navbar {
@@ -180,6 +181,7 @@ a.text-secondary:hover {
 
 .img-icons a:hover i {
   color: #ffb400 !important;
+  cursor: pointer;
 }
 
 /* .grid {

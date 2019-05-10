@@ -18,7 +18,7 @@ export default function Portfolio() {
 
 function IMGContainer({ itemNum, img, title, description, git, live }) {
   return (
-    <article class={`img-container ${itemNum}`}>
+    <article class={`img-container ${itemNum} my-3 my-lg-0 shadow`}>
       <img src={img} />
       <div class="d-flex flex-column align-items-center justify-content-around img-description h-100 w-100">
         <div class="img-text">
@@ -49,7 +49,7 @@ function items() {
       live: "https://hotel-booking-app-css.netlify.com"
     },
     {
-      itemNum: "item-2",
+      itemNum: "item-4",
 
       img: cart,
       title: "Vanilla js shopping app",
@@ -58,7 +58,7 @@ function items() {
       live: "https://mvc-shopping-cart.netlify.com"
     },
     {
-      itemNum: "item-3",
+      itemNum: "item-8",
 
       img: fire,
       title: "ReactJs chat app",
@@ -67,7 +67,7 @@ function items() {
       live: "https://react-on-fire.netlify.com"
     },
     {
-      itemNum: "item-4",
+      itemNum: "item-2",
       img: "https://source.unsplash.com/random/1",
       title: "Next Project",
       description: "Awesome new app",
@@ -99,7 +99,7 @@ function items() {
       live: null
     },
     {
-      itemNum: "item-8",
+      itemNum: "item-3",
       img: "https://source.unsplash.com/random/5",
       title: "Next Project",
       description: "Awesome new app",
