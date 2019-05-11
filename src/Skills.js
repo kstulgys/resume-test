@@ -43,7 +43,7 @@ export default function Skills() {
               </li>
               <li>
                 <i class="fas fa-check mr-2 text-warning" />
-                Firebase / Firestore
+                Firebase
               </li>
               <li>
                 <i class="fas fa-check mr-2 text-warning" />
