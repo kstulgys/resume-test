@@ -15,10 +15,10 @@ export default function Interests() {
           latest technology advancements in the front-end web development world
           and having a great desire to learn new things. Code and design are my
           passion. I have what it takes to be a great developer and currently
-          I'm actively looking for new opportunities. My github profile might
-          not shine with the complex projects, but I encourage you to asses my
-          skills with a homework assignment or on site and I will not make you
-          disappointed.
+          I'm actively looking for new opportunities to show my skills. My
+          github profile might not shine with the complex projects, but I
+          encourage you to asses my skills with a homework assignment or on site
+          and I will not make you disappointed.
         </p>
         <p class="text-justify mb-3">
           Thank you for your time, and let’s get in touch to talk about the
