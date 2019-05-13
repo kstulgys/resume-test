@@ -6,9 +6,9 @@ export default function Interests() {
     <Section id="Interests">
       <div class="item mb-5">
         <p class="text-justify mb-2">
-          My name is Karolis, I’m highly motivated and passionate self-taught
-          frontend engineer. I'm fascinated about nutrition, human performance,
-          strength training and everything in between.
+          I'm Karolis - highly motivated and passionate self-taught frontend
+          engineer. I'm fascinated about nutrition, human performance, strength
+          training and everything in between.
         </p>
         <p class="text-justify mb-2">
           During the pas few years I found myself constantly exploring the
