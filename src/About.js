@@ -30,7 +30,11 @@ export default function About({ width }) {
           >
             <i class="fab fa-linkedin" />
           </a>
-          <a class="" href="https://bit.ly/2ShKcvV" target="_blank">
+          <a
+            class=""
+            href="https://www.dropbox.com/s/cwhewbr9yd8f0if/Karolis_Stulgys_resume_and_brief_2019.pdf?dl=0"
+            target="_blank"
+          >
             <i class="fas fa-file-download" />
           </a>
         </div>
