@@ -12,8 +12,10 @@ export default function About({ width }) {
         <h1 class="display-2">
           Pasionate{" "}
           <span class="text-warning font-weight-bold">Self-taught </span>
+          <h1 />
+          Full-Stack developer
         </h1>
-        <h1 class="display-2">Full-Stack developer</h1>
+        {/* <h1 class="display-2 p-0">Full-Stack developer</h1> */}
 
         <p class="mb-4 mb-lg-5">
           An ordinary man, who learned, he is capable of{" "}
