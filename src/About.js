@@ -11,9 +11,10 @@ export default function About({ width }) {
       <div class="d-flex flex-column justify-content-center mt-lg-0 mt-5">
         <h1 class="display-2">
           Pasionate{" "}
-          <span class="text-warning font-weight-bold">Self-taught</span>{" "}
-          Frontend engineer
+          <span class="text-warning font-weight-bold">Self-taught </span>
         </h1>
+        <h1 class="display-2">Full-Stack developer</h1>
+
         <p class="mb-4 mb-lg-5">
           An ordinary man, who learned, he is capable of{" "}
           <span class="text-warning font-weight-bold">extraordinary</span>{" "}
