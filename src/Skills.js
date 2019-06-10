@@ -8,7 +8,6 @@ export default function Skills() {
         <div class="row">
           <div class="col-6 col-lg-3">
             <h2>Frontend</h2>
-            <h4 class="text-muted">Proficient with:</h4>
             <ul class="mt-2">
               <li>
                 <i class="fas fa-check mr-2 text-warning" />
@@ -35,7 +34,6 @@ export default function Skills() {
 
           <div class="col-6 col-lg-3">
             <h2>Backend</h2>
-            <h4 class="text-muted">Familiar with:</h4>
             <ul class="mt-2">
               <li>
                 <i class="fas fa-check mr-2 text-warning" />
@@ -69,7 +67,6 @@ export default function Skills() {
           </div>
           <div class="col-6 col-lg-3">
             <h2>Testing</h2>
-            <h4 class="text-muted">Starting with:</h4>
             <ul class="mt-2">
               <li>
                 <i class="fas fa-check mr-2 text-warning" />
