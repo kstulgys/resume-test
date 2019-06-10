@@ -23,22 +23,22 @@ export default function About({ width }) {
           things
         </p>
         <div className="social-icons d-flex justify-content-center justify-content-lg-end mt-5">
-          <a class="" href="https://github.com/kstulgys" target="_blank">
-            <i class="fab fa-github" />
+          <a className="" href="https://github.com/kstulgys" target="_blank">
+            <i className="fab fa-github" />
           </a>
           <a
-            class=""
-            href="https://linkedin.com/in/karolis-stulgys"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin" />
-          </a>
-          <a
-            class=""
+            className="animated infinite bounce delay-1s"
             href="https://www.dropbox.com/s/cwhewbr9yd8f0if/Karolis_Stulgys_resume_and_brief_2019.pdf?dl=0"
             target="_blank"
           >
-            <i class="fas fa-file-download" />
+            <i className="fas fa-file-download" />
+          </a>
+          <a
+            className=""
+            href="https://linkedin.com/in/karolis-stulgys"
+            target="_blank"
+          >
+            <i className="fab fa-linkedin" />
           </a>
         </div>
       </div>

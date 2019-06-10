@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 import {
   Navbar,
   NavbarToggler,
@@ -7,20 +7,25 @@ import {
   NavItem,
   NavLink,
   Collapse
-} from "shards-react";
+} from "shards-react"
 
 export default function Navigation() {
-  const [open, toggle] = useState(false);
-  const [active, setActive] = useState("#About");
+  const [open, toggle] = useState(false)
+  const [active, setActive] = useState("#About")
 
   // useEffect(() => {
   //   document.querySelector('[ href="#Projects"]').click()
   // }, [])
 
   return (
-    <Navbar class="sticky-top" type="dark" theme="secondary" expand="md">
+    <Navbar
+      className="sticky-top shadow-lg bg-dark"
+      type="dark"
+      theme="secondary"
+      expand="md"
+    >
       <NavbarBrand href="#About">
-        <h2 class="p-0 m-0 text-warning font-weight-bold">#imkarolis</h2>
+        <h2 className="p-0 m-0 text-warning font-weight-bold">#imkarolis</h2>
       </NavbarBrand>
       <NavbarToggler onClick={() => toggle(!open)} />
 
@@ -33,17 +38,17 @@ export default function Navigation() {
               href="#About"
               onClick={e => setActive(e.target.name)}
             >
-              <span class="font-weight-bold">About</span>
+              <span className="font-weight-bold">About</span>
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink
               name="#Experience"
               active={active === "#Experience"}
               href="#Experience"
               onClick={e => setActive(e.target.name)}
             >
-              <span class="font-weight-bold">Experience</span>
+              <span className="font-weight-bold">Experience</span>
             </NavLink>
           </NavItem>
           <NavItem>
@@ -53,9 +58,9 @@ export default function Navigation() {
               href="#Education"
               onClick={e => setActive(e.target.name)}
             >
-              <span class="font-weight-bold">Education</span>
+              <span className="font-weight-bold">Education</span>
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink
               name="#Skills"
@@ -63,7 +68,7 @@ export default function Navigation() {
               href="#Skills"
               onClick={e => setActive(e.target.name)}
             >
-              <span class="font-weight-bold">Skills</span>
+              <span className="font-weight-bold">Skills</span>
             </NavLink>
           </NavItem>
 
@@ -74,7 +79,7 @@ export default function Navigation() {
               href="#Projects"
               onClick={e => setActive(e.target.name)}
             >
-              <span class="font-weight-bold">Projects</span>
+              <span className="font-weight-bold">Projects</span>
             </NavLink>
           </NavItem>
 
@@ -85,22 +90,22 @@ export default function Navigation() {
               href="#Awards"
               onClick={e => setActive(e.target.name)}
             >
-              <span class="font-weight-bold">Awards</span>
+              <span className="font-weight-bold">Awards</span>
             </NavLink>
           </NavItem>
 
-          <NavItem>
+          {/* <NavItem>
             <NavLink
               name="#Interests"
               active={active === "#Interests"}
               href="#Interests"
               onClick={e => setActive(e.target.name)}
             >
-              <span class="font-weight-bold">Interests</span>
+              <span className="font-weight-bold">Interests</span>
             </NavLink>
-          </NavItem>
+          </NavItem> */}
         </Nav>
       </Collapse>
     </Navbar>
-  );
+  )
 }

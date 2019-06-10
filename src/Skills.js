@@ -6,7 +6,7 @@ export default function Skills() {
     <Section id="Skills">
       <div class="item mb-5">
         <div class="row">
-          <div class="col">
+          <div class="col-6 col-lg-3">
             <h2>Frontend</h2>
             <h4 class="text-muted">Proficient with:</h4>
             <ul class="mt-2">
@@ -33,7 +33,7 @@ export default function Skills() {
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col-6 col-lg-3">
             <h2>Backend</h2>
             <h4 class="text-muted">Familiar with:</h4>
             <ul class="mt-2">
@@ -67,7 +67,7 @@ export default function Skills() {
               </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-6 col-lg-3">
             <h2>Testing</h2>
             <h4 class="text-muted">Starting with:</h4>
             <ul class="mt-2">
@@ -81,6 +81,7 @@ export default function Skills() {
               </li>
             </ul>
           </div>
+          <div class="col-0 col-lg-3" />
         </div>
       </div>
     </Section>

@@ -7,10 +7,10 @@ export default function Awards() {
     <Section id="Awards">
       <div className="">
         <div class="img-container">
-          <img src={c1} />
+          <img src={c1} alt="award" />
         </div>
 
-        <h3 class="text-muted">More coming soon</h3>
+        <h3 class="text-muted my-4">More coming soon</h3>
       </div>
     </Section>
   )
