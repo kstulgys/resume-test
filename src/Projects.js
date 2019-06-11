@@ -4,6 +4,7 @@ import fire from "./images/fire.png";
 import hotel from "./images/hotel.png";
 import cart from "./images/cart.png";
 import twitter from "./images/twitter-task.png";
+import nextLogin from "./images/next-login.png";
 
 export default function Portfolio() {
   return (
@@ -49,7 +50,7 @@ function items() {
       itemNum: "item-1",
       img: hotel,
       title: "Hotel booking",
-      description: "HTML & CSS, Flexbox / grid",
+      description: "HTML & CSS, Flexbox / Grid",
       git: "https://github.com/kstulgys/booking-app-css",
       live: "https://hotel-booking-app-css.netlify.com"
     },
@@ -67,7 +68,7 @@ function items() {
 
       img: fire,
       title: "Chat",
-      description: "React / Hooks / firebase",
+      description: "Reactjs / Hooks / Firebase",
       git: "https://github.com/kstulgys/react-on-fire",
       live: "https://react-on-fire.netlify.com"
     },
@@ -76,40 +77,15 @@ function items() {
       itemNum: "item-2",
       title: "Twitter-test-task",
       description: "Twitter API / Client / Server",
-      about: "",
       git: "https://github.com/kstulgys/twitter-frontend"
+    },
+    {
+      img: nextLogin,
+      itemNum: "item-5",
+      title: "Next-login",
+      description: "Nextjs / Reactjs / Nodejs",
+      git: "https://github.com/kstulgys/next-react-signin",
+      live: "https://codesandbox.io/s/github/kstulgys/next-react-signin"
     }
-    // {
-    //   itemNum: "item-5",
-    //   img: "https://source.unsplash.com/random/2",
-    //   title: "Next Project",
-    //   description: "Awesome new app",
-    //   git: null,
-    //   live: null
-    // },
-    // {
-    //   itemNum: "item-6",
-    //   img: "https://source.unsplash.com/random/3",
-    //   title: "Next Project",
-    //   description: "Awesome new app",
-    //   git: null,
-    //   live: null
-    // },
-    // {
-    //   itemNum: "item-7",
-    //   img: "https://source.unsplash.com/random/4",
-    //   title: "Next Project",
-    //   description: "Awesome new app",
-    //   git: null,
-    //   live: null
-    // },
-    // {
-    //   itemNum: "item-3",
-    //   img: "https://source.unsplash.com/random/5",
-    //   title: "Next Project",
-    //   description: "Awesome new app",
-    //   git: null,
-    //   live: null
-    // }
   ];
 }
