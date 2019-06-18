@@ -28,7 +28,7 @@ export default function About({ width }) {
           </a>
           <a
             className="animated infinite bounce delay-1s"
-            href="https://www.dropbox.com/s/cwhewbr9yd8f0if/Karolis_Stulgys_resume_and_brief_2019.pdf?dl=0"
+            href="https://bit.ly/2ImxLc8"
             target="_blank"
           >
             <i className="fas fa-file-download" />
