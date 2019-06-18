@@ -1,21 +1,22 @@
-import React from "react";
-import Section from "./Section";
-import fire from "./images/fire.png";
-import hotel from "./images/hotel.png";
-import cart from "./images/cart.png";
-import twitter from "./images/twitter-task.png";
-import nextLogin from "./images/next-login.png";
+import React from "react"
+import Section from "./Section"
+import fire from "./images/fire.png"
+import hotel from "./images/hotel.png"
+import cart from "./images/cart.png"
+import twitter from "./images/twitter-task.png"
+import nextLogin from "./images/next-login.png"
+import reactflix from "./images/reactflix.png"
 
 export default function Portfolio() {
   return (
     <Section id="Projects">
       <div className="row">
         {items().map((item, i) => {
-          return <IMGContainer key={i} {...item} />;
+          return <IMGContainer key={i} {...item} />
         })}
       </div>
     </Section>
-  );
+  )
 }
 
 function IMGContainer({ itemNum, img, title, description, git, live }) {
@@ -41,7 +42,7 @@ function IMGContainer({ itemNum, img, title, description, git, live }) {
         </div>
       </div>
     </article>
-  );
+  )
 }
 
 function items() {
@@ -86,6 +87,14 @@ function items() {
       description: "Nextjs / Reactjs / Nodejs",
       git: "https://github.com/kstulgys/next-react-signin",
       live: "https://codesandbox.io/s/github/kstulgys/next-react-signin"
+    },
+    {
+      img: reactflix,
+      itemNum: "item-5",
+      title: "Reactflix",
+      description: "Reactjs / tmdbAPI",
+      git: "https://github.com/kstulgys/react-flix",
+      live: "https://codesandbox.io/s/react-flix-jgcrc"
     }
-  ];
+  ]
 }
