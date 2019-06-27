@@ -10,7 +10,7 @@ export default function About({ width }) {
     >
       <div class="d-flex flex-column justify-content-center mt-lg-0 mt-5">
         <h1 class="display-2">
-          Pasionate{" "}
+          Passionate{" "}
           <span class="text-warning font-weight-bold">Self-taught </span>
           <h1 />
           Full-Stack developer
