@@ -54,7 +54,7 @@ function items() {
       title: "Expensify",
       description: "reactjs / hooks / tailwindCSS",
       git: "https://github.com/kstulgys/expensify",
-      live: "https://uhofg.codesandbox.io/"
+      live: "https://codesandbox.io/s/new-uhofg"
     },
     {
       itemNum: "item-1",
