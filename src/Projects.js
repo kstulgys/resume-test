@@ -6,6 +6,7 @@ import cart from "./images/cart.png"
 import twitter from "./images/twitter-task.png"
 import nextLogin from "./images/next-login.png"
 import reactflix from "./images/reactflix.png"
+import expenses from "./images/expenses.png"
 
 export default function Portfolio() {
   return (
@@ -47,6 +48,14 @@ function IMGContainer({ itemNum, img, title, description, git, live }) {
 
 function items() {
   return [
+    {
+      img: expenses,
+      itemNum: "item-5",
+      title: "Expensify",
+      description: "reactjs / hooks / tailwindCSS",
+      git: "https://github.com/kstulgys/expensify",
+      live: "https://uhofg.codesandbox.io/"
+    },
     {
       itemNum: "item-1",
       img: hotel,
