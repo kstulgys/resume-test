@@ -7,6 +7,7 @@ import twitter from "./images/twitter-task.png"
 import nextLogin from "./images/next-login.png"
 import reactflix from "./images/reactflix.png"
 import expenses from "./images/expenses.png"
+import imkarolis from "./images/imkarolis.png"
 
 export default function Portfolio() {
   return (
@@ -20,7 +21,15 @@ export default function Portfolio() {
   )
 }
 
-function IMGContainer({ itemNum, img, title, description, git, live }) {
+function IMGContainer({
+  itemNum,
+  img,
+  title,
+  description,
+  git,
+  live,
+  codesandbox
+}) {
   return (
     <article
       class={`img-container ${itemNum} p-0 my-3 col-12 col-lg-4 p-md-0 m-md-3 shadow`}
@@ -31,15 +40,27 @@ function IMGContainer({ itemNum, img, title, description, git, live }) {
           <h3 class="font-weight-bold text-dark mb-2">{title}</h3>
           <p>{description}</p>
         </div>
-        <div class="img-icons">
-          <a class="m-2" href={git} target="_blank">
-            <i class="fab fa-github fa-2x text-dark" />
-          </a>
+        <div class="img-icons d-flex">
+          {git && (
+            <a class="m-2" href={git} target="_blank">
+              <i class="fab fa-github fa-2x text-dark" />
+            </a>
+          )}
           {live && (
             <a class="m-2" href={live} target="_blank">
               <i class="fas fa-link fa-2x text-dark" />
             </a>
           )}
+          {/* {codesandbox && (
+            <div style={{ zIndex: 11 }}>
+              <a href={codesandbox}>
+                <img
+                  alt="Edit new"
+                  src="https://codesandbox.io/static/img/play-codesandbox.svg"
+                />
+              </a>
+            </div>
+          )} */}
         </div>
       </div>
     </article>
@@ -49,12 +70,20 @@ function IMGContainer({ itemNum, img, title, description, git, live }) {
 function items() {
   return [
     {
+      img: imkarolis,
+      itemNum: "item-5",
+      title: "imkarolis",
+      description: "portfolio site / tailwindCSS",
+      live: "https://imkarolis-v2.netlify.com/"
+    },
+    {
       img: expenses,
       itemNum: "item-5",
       title: "Expensify",
       description: "reactjs / hooks / tailwindCSS",
       git: "https://github.com/kstulgys/expensify",
-      live: "https://codesandbox.io/s/new-uhofg"
+      live: "https://codesandbox.io/s/new-uhofg",
+      codesandbox: "https://codesandbox.io/s/new-uhofg?fontsize=14"
     },
     {
       itemNum: "item-1",
